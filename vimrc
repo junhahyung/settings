@@ -16,6 +16,9 @@ Plugin 'The-NERD-tree'
 Plugin 'AutoComplPop'
 Plugin 'taglist-plus'
 Plugin 'c.vim'
+Plugin 'ronakg/quickr-cscope.vim'
+Plugin 'tell-k/vim-autopep8'
+
 
 call vundle#end()
 
@@ -61,3 +64,6 @@ set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
 set background=dark
 colorscheme solarized
+autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+set list listchars=tab:»·,trail:·
+
